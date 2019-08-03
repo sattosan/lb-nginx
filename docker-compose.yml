@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+    lb:
+        container_name: "lb"
+        build: "./lb"
+        ports:
+            - 8000:80
+    web1:
+        container_name: "web1"
+        build: "./web"
+    web2:
+        container_name: "web2"
+        build: "./web"
